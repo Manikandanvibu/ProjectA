@@ -1,0 +1,33 @@
+<div class="p-5">
+    <h1 class="text-center" style="font-family: serif;">update Product</h1>
+    <div class="container w-50 text-center bg-dark p-3">
+        <form (ngSubmit)="updateproduct(updateproductform)"  #updateproductform="ngForm">
+            <input [(ngModel)]="productdata.id"  id="pid" name="p1" class="form-control mt-2 p-2" type="text" id="id" placeholder="id">
+            <br>
+            <input [(ngModel)]="productdata.productName" id="pname" name="p2" class="form-control mt-2 p-2"  type="text" id="productName" placeholder="productName">
+            <br>
+            <input [(ngModel)]="productdata.categoryId" id="cid" name="p3" class="form-control mt-2 p-2"  type="text" id="categoryId" placeholder="categoryId">
+            <br>
+            <input [(ngModel)]="productdata.description"  id="did" name="p4" class="form-control mt-2 p-2"  type="text" id="description" placeholder="description">
+            <br>
+            <input [(ngModel)]="productdata.price" id="priceid" name="p5" class="form-control mt-2 p-2"  type="text" id="price" placeholder="price">
+            <br>
+            <input [(ngModel)]="productdata.is_available"  id="avid" name="p6" class="form-control mt-2 p-2"  type="text" id="is_available" placeholder="is_available">
+            <br>
+            <input [(ngModel)]="productdata.productImg" id="imid" name="p7" class="form-control mt-2 p-2"  type="text" id="productImg" placeholder="productImg">
+            <br>
+            <input [(ngModel)]="productdata.rating"  id="ratid" name="p8" class="form-control mt-2 p-2"  type="text" id="rating" placeholder="rating">
+            <br>
+            <input [(ngModel)]="productdata.discount"  id="discountid" name="p12" class="form-control mt-2 p-2"  type="text" id="rating" placeholder="rating">
+            <br>
+            <input [(ngModel)]="productdata.review" id="reid" name="p9" class="form-control mt-2 p-2"  type="text" id="review" placeholder="review">
+            <br>
+            <input [(ngModel)]="productdata.vendor_name"  id="venid" name="p10" class="form-control mt-2 p-2"  type="text" id="vendor_name" placeholder="vendor_name">
+            <br>
+            <input [(ngModel)]="productdata.warranty" id="warid" name="p11" class="form-control mt-2 p-2"  type="text" id="warranty" placeholder="warranty">
+            <br>
+            <button type="submit" class="btn btn-success mt-2 p-2 mb-3">update product</button>
+        </form>
+    </div>
+    
+</div>
